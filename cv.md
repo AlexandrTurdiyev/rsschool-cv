@@ -40,6 +40,10 @@
 - **Database Management:**    
 	- MySQL / PhpMyAdmin   
 
+- **Languages:**    
+  - Russian: native
+  - English: B1 (reading proficiency)
+
 ## EDUCATION
 ### IT
 - **Almaty Technical College** / Faculty of **Computing and Software** / Specialty: **Software Technician**.
