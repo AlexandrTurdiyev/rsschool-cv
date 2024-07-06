@@ -38,17 +38,97 @@
     src: url('assets/fonts/Comic_Neue/ComicNeue-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
-} // ComicNeue-BoldItalic
+} // ComicNeue-BoldItalic'
+
+$pageFontFamily: "Comic Neue", cursive;
+$heading1Margin: 5px 0 10px 0;
+$heading2Margin: 5px 0 10px 0;
+$heading1FontSize: 20px;
+$heading3Margin: 5px 0 10px 0;
+$listMargin: 0 0 10px 0;
+$listItemMargin: 0 0 10px 0;
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: "Comic Neue", cursive;
+    font-family: $pageFontFamily;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: $listMargin;
+}
+
+ul > li {
+    margin: $listItemMargin;
+    line-height: 150%;
+}
+
+h1 {
+    margin: $heading1Margin;
+}
+h2 {
+    margin: $heading2Margin;
+}
+h3 {
+    font-size: $heading1FontSize;
+    margin: $heading3Margin;
 }
 
 .container {
     max-width: 1200px;
+    padding: 0 32px;
     margin: 0 auto;
+}
+
+.header {
+    min-height: 60px;
+}
+
+.nav {
+    &__item {
+        list-style: none;
+        text-align: center;
+    }
+    &__item:hover {
+        background-color: #000000;
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        padding: 4px 0;
+    }
+    &__link:hover {
+        color: #F1F1F1;
+    }
+}
+
+.cv-info {
+    max-width: 70%;
+}
+
+.section {
+    &__content {
+        padding: 0 0 0 1rem;
+    }
+    &__list-item {
+        margin-left: 40px;
+    }
+}
+
+.footer {
+    min-height: 60px;
 }
