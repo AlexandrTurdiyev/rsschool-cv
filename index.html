@@ -191,14 +191,16 @@
                 <li class="section__list-item">
                   <b>Example code</b> for the background slider image transition
                   on the main page of the website
-                  https://farizmamedovinteriors.com:
-                  <code>
-                    function switchImage() {
-                    images[currentIndex].classList.remove('bg-slider__img--active');
-                    currentIndex = (currentIndex + 1) % images.length;
-                    images[currentIndex].classList.add('bg-slider__img--active');
-                    } setInterval(switchImage, delay);
-                  </code>
+                  https://farizmamedovinteriors.com:<br>
+                  <div class="code-wrapper">
+                    <code>
+                      function switchImage() {<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex].classList.remove('bg-slider__img--active');<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;currentIndex = (currentIndex + 1) % images.length;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex].classList.add('bg-slider__img--active');<br>
+                      } setInterval(switchImage, delay);<br>
+                    </code>
+                  </div>
                   This code snippet demonstrates the functionality for changing
                   background images in a slider on the homepage of the mentioned
                   website. The switchImage function removes the active class from
