@@ -195,9 +195,13 @@
                   <div class="code-wrapper">
                     <code>
                       function switchImage() {<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex].classList.remove('bg-slider__img--active');<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex]<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.classList<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.remove('bg-slider__img--active');<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;currentIndex = (currentIndex + 1) % images.length;<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex].classList.add('bg-slider__img--active');<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;images[currentIndex]<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.classList<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.add('bg-slider__img--active');<br>
                       } setInterval(switchImage, delay);<br>
                     </code>
                   </div>
