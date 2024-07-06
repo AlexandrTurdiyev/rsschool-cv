@@ -77,13 +77,27 @@ h3 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   max-width: 1200px;
   padding: 0 32px;
   margin: 0 auto;
 }
 
 .header {
-  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.header__item {
+  position: relative;
+}
+.header__quote {
+  font-size: 20px;
+  text-align: center;
 }
 
 .sidebar {
@@ -102,6 +116,7 @@ h3 {
   background-color: #000000;
 }
 .nav__link {
+  font-size: 20px;
   display: block;
   width: 100%;
   padding: 4px 0;
@@ -129,7 +144,24 @@ h3 {
 }
 
 .footer {
-  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer__item {
+  position: relative;
+}
+.footer__link {
+  position: absolute;
+  inset: 0;
+}
+.footer__link-year {
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer__img {
+  max-height: 32px;
 }
 
 @media (max-width: 768px) {
@@ -150,6 +182,13 @@ h3 {
   }
 }
 @media (max-width: 480px) {
+  .header__quote {
+    font-size: 1rem;
+  }
+  .header__img {
+    width: auto;
+    height: 32px;
+  }
   .sidebar {
     display: flex;
     flex-direction: column;
