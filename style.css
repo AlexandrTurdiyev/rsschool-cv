@@ -131,6 +131,19 @@ h3 {
   color: #F1F1F1;
 }
 
+.cv__photo-frame {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px #000;
+  max-height: 256px;
+  max-width: 256px;
+}
+.cv__photo-img {
+  display: block;
+  height: 100%;
+}
+
 .cv-info {
   max-width: 70%;
 }
@@ -270,12 +283,9 @@ path {
     align-items: center;
     gap: 1rem;
   }
-  .cv__photo-frame {
-    width: 100%;
-  }
   .cv__photo-img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .cv-info {
     max-width: 100%;

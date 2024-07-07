@@ -143,6 +143,23 @@ h3 {
     }
 }
 
+.cv {
+    &__photo-frame {
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid black;
+        box-shadow: 2px 2px 4px #000;
+        max-height: 256px;
+        max-width: 256px;
+    }
+    &__photo-img {
+        display: block;
+        height: 100%;
+    }
+
+
+}
+
 .cv-info {
     max-width: 70%;
 }
@@ -289,14 +306,9 @@ path {
         gap: 1rem;
     }
     .cv {
-        &__photo-frame {
-            width: 100%;
-
-        }
-
         &__photo-img {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 
