@@ -213,6 +213,28 @@ path {
     }
 }
 
+.scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.15s linear;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #000;
+  }
+
+  .scroll-to-top-btn:hover path {
+    fill: white;
+  }
+
 /* RS SCHOOL svg */
 // иначе фон JS - черный
 #mask0_1_7 path {fill: #FFF;} 
@@ -237,6 +259,10 @@ path {
     .cv-info {
         max-width: 100%;
     }
+
+    .scroll-to-top-btn {
+        right: 1px;
+      }
 }
 
 @media (max-width: 480px) {

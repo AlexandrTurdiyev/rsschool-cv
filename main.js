@@ -26,6 +26,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('load', function() {
     console.log('Все ресурсы загружены');
+    
+    const scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+
+  scrollToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });})
+    
+    
 });
 
 function getBurgerBtn () { // Получить кнопку бургер-меню
