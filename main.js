@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Кнопка бургер-меню НЕ найдена...');
     }
 
+    document.querySelectorAll('.nav__link').forEach(anchor => {
+        anchor.addEventListener('click', function(event) {
+          event.preventDefault();
+    
+          document.querySelector(
+            this.getAttribute('href'))
+            .scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+      });
 });
 
 window.addEventListener('load', function() {
