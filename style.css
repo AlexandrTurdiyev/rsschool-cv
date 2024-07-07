@@ -314,6 +314,28 @@ path {
     max-width: 95%;
   }
 }
+@media (max-width: 320px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+  .header__img {
+    display: none;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .section__list-item {
+    list-style: none;
+    margin-left: 0;
+  }
+  .code-wrapper {
+    overflow: auto;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 .burger--open {
   transform: rotate(45deg);
   transition: transform 0.5s ease-in-out;
