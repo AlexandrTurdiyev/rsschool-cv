@@ -150,6 +150,15 @@ h3 {
     &__list-item {
         margin-left: 40px;
     }
+    &__link {
+        display: inline-block;
+        padding: 0 4px;
+        transition: all .15s ease-in-out;
+    }
+    &__link:hover {
+        color: #F1F1F1;
+        background-color: #000000;
+    }
 }
 
 .code-wrapper {

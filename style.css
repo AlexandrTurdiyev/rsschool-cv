@@ -137,6 +137,15 @@ h3 {
 .section__list-item {
   margin-left: 40px;
 }
+.section__link {
+  display: inline-block;
+  padding: 0 4px;
+  transition: all 0.15s ease-in-out;
+}
+.section__link:hover {
+  color: #F1F1F1;
+  background-color: #000000;
+}
 
 .code-wrapper {
   background-color: #f7f7f7;
