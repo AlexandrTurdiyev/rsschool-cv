@@ -132,6 +132,7 @@ h3 {
 }
 
 .cv__photo-frame {
+  position: relative;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid black;
@@ -142,6 +143,15 @@ h3 {
 .cv__photo-img {
   display: block;
   height: 100%;
+}
+.cv__color-photo {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+.cv__color-photo:hover {
+  opacity: 1;
 }
 
 .cv-info {
