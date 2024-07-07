@@ -145,6 +145,14 @@ h3 {
   border-radius: 10px;
 }
 
+svg {
+  transition: all 0.15s ease-in-out;
+}
+
+path {
+  transition: all 0.15s ease-in-out;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -154,9 +162,20 @@ h3 {
 .footer__item {
   position: relative;
 }
-.footer__link {
-  position: absolute;
-  inset: 0;
+.footer__link svg {
+  stroke: #000000;
+}
+.footer__link path {
+  fill: #ffffff;
+}
+.footer__link:hover svg {
+  stroke: #000000;
+}
+.footer__link:hover path {
+  fill: #000000;
+}
+.footer__link:hover #backgroundJS {
+  fill: #ffffff;
 }
 .footer__link-year {
   font-size: 20px;
@@ -166,6 +185,16 @@ h3 {
   max-height: 32px;
 }
 
+/* RS SCHOOL svg */
+#mask0_1_7 path {
+  fill: #FFF;
+}
+
+#mask1_1_7 path {
+  fill: #FFF;
+}
+
+/* [END] RS SCHOOL svg */
 @media (max-width: 768px) {
   .container {
     padding: 0 1.5rem;

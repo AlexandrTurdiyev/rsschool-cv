@@ -159,6 +159,13 @@ h3 {
     border-radius: 10px;
 }
 
+svg {
+    transition: all 0.15s ease-in-out;
+}
+
+path {
+    transition: all 0.15s ease-in-out;
+}
 
 .footer {
     display: flex;
@@ -168,9 +175,20 @@ h3 {
     &__item {
         position: relative;
     }
-    &__link {
-        position: absolute;
-        inset: 0;
+    &__link svg { // обвести иконки
+        stroke: #000000;
+    }
+    &__link path { // окрасить фон иконок
+        fill: #ffffff;
+    }
+    &__link:hover svg {
+        stroke: #000000;
+    }
+    &__link:hover path { // окрасить фон иконок при наведении
+        fill: #000000;
+    }
+    &__link:hover #backgroundJS { // окрасить фон JS в эллипсе (иначе черный)
+        fill: #ffffff;
     }
     &__link-year {
         font-size: 20px;
@@ -179,8 +197,13 @@ h3 {
     &__img {
         max-height: 32px;
     }
-
 }
+
+/* RS SCHOOL svg */
+// иноче фон JS - черный
+#mask0_1_7 path {fill: #FFF;} 
+#mask1_1_7 path {fill: #FFF;}
+/* [END] RS SCHOOL svg */
 
 @media (max-width: 768px) {
     .container {
@@ -260,3 +283,4 @@ h3 {
         max-width: 95%;
     }
 }
+
